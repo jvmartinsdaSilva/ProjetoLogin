@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+
+@media screen and (min-width: 768px){
+
+    
+
+    section#login{
+        display: grid;
+        grid-template-columns: repeat(2, 40% 60%);
+        height: 300px;
+    }
+
+    div#imagem{
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+    .inputs, .buttons{
+        font-size: 16px;
+    }
+
+    div#formulario > p{
+        font-size: 16px;
+    }
+
+    form .labels{
+        width: 95%;
+    }
+
+    form .buttons{
+        width: 95%;
+        margin-left: auto;
+        margin-top: 0;
+    }
+
+    form .BtnSubmit{
+        margin-bottom: 5px;
+    }
+
+}

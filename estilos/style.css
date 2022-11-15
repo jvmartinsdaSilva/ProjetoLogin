@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+/* 
+    Paleta de Cores 
+
+    Verde: #49a09d
+    Lilás: #5f2c82
+    
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body,html{
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background: var(--color1);
+}
+
+:root{
+    --color1: #1e90ff;
+    --color2:  #5f2c82;
+    --color3: #ffffff;
+}
+
+main{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: block;
+}
+
+section#login{
+    width: 80vw;
+    height: 530px;
+    background: var(--color3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+}
+
+div#imagem{
+    height: 40%;
+    background-image: url(../imagens/ImagemLogin.jpg);
+    background-position: left top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+div#formulario{
+    padding: 5px;
+    text-align: center;
+    display: block;
+}
+
+div#formulario h1, p{
+    margin-top: 5px;
+}
+
+div#formulario p {
+    font-size: 12px;
+}
+
+form{
+    margin-top: 10px;
+}
+
+form label input {
+    display: block;
+}
+
+form  .labels{
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    background: var(--color2);
+    width: 90%;
+    height: 40px;
+    display: flex;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+form label p {
+    color: var(--color3);
+    display: inline-block;
+    margin: 0;
+    margin-left: 2px;
+    font: bold 18px arial !important;
+}
+
+form  .inputs{
+    width: calc(100% - 50px);
+    margin: auto;
+    height: 30px;
+    margin-left: 5px;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+}
+
+form .buttons {
+    margin-top: 20px;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.BtnSubmit{
+
+    background: var(--color1);
+    border: none;
+    color: var(--color3);
+}
+
+button.BtnSubmit:hover{
+    background: #0c4279;
+}
+
+button.BtnEsqueciSenha{
+    margin-top: 10px;
+    border-color: var(--color1);
+}
+
+button.BtnEsqueciSenha:hover{
+    background: #1e8fff46 ;
+}
