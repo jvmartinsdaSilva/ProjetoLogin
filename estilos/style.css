@@ -24,8 +24,8 @@ body,html{
 }
 
 :root{
-    --color1: #1e90ff;
-    --color2:  #5f2c82;
+    --color1: #1A2833;
+    --color2:  #011C26;
     --color3: #ffffff;
 }
 
@@ -45,13 +45,14 @@ section#login{
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 20px;
+    box-shadow: 2px 2px 2px #1a28334b;
 }
 
 div#imagem{
     height: 40%;
     background-image: url(../imagens/ImagemLogin.jpg);
     background-position: left top;
-    background-size: cover;
+    background-size: 100%;
     background-repeat: no-repeat;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -126,14 +127,14 @@ button.BtnSubmit{
 }
 
 button.BtnSubmit:hover{
-    background: #0c4279;
+    background: var(--color2);
 }
 
 button.BtnEsqueciSenha{
     margin-top: 10px;
-    border-color: var(--color1);
+    border-color: var(--color2);
 }
 
 button.BtnEsqueciSenha:hover{
-    background: #1e8fff46 ;
+    background: #1a283385;
 }
