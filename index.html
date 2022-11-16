@@ -28,16 +28,21 @@
                     <div class="campo">
                         <label for="iSenha" id="labelEmail" class="labels">
                           <p> <span class="material-symbols-outlined">key</span></p> 
-                          <input type="password" name="senha" id="iSenha" class="inputs" placeholder="Digite sua senhs aqui!" minlength="8" required >                       
+                          <input type="password" name="senha" id="iSenha" class="inputs" placeholder="Digite sua senha aqui!" minlength="8" required >                       
                         <label>
                     </div>
                     <div class="campo">
-                        <button type="submit" class="buttons BtnSubmit">Click</button>
-                        <button type="submit" class="buttons BtnEsqueciSenha">Esqueci minha senha</button>
+                        <button type="submit" class="buttons BtnSubmit">Entrar</button>
+                        <button type="button" class="buttons BtnEsqueciSenha">Esqueci minha senha</button>
                     </div>
                 </form>
             </div>
         </section>
     </main>
+    <script>
+        const btnEsqueciSenha = document.querySelector('.BtnEsqueciSenha')
+
+        btnEsqueciSenha.addEventListener('click', () => {window.location = 'RecuperarSenha.html'})
+    </script>
 </body>
 </html>
